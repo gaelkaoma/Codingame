@@ -2,6 +2,7 @@
 
 /*
 	cette fonction retour une chaine avec avec le nombre d'occurences consécutives de chaque lettre 
+	ex : aaabbbz => 3a3b1z
 */
 function encode(string $paintText) : String {
 	$chars = str_split($paintText);
@@ -23,4 +24,4 @@ function encode(string $paintText) : String {
 }
 
 // aaabbbc => 3a3b1z
-print_r(encode("aaabbbz"));
+print_r(encode("aaabbz"));
